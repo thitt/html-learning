@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu dropdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="action">
+        <div class="profile" onclick="menuToggle();">
+            <img src="../image/img_avatar.png" alt="Avatar">
+        </div>
+        <div class="menu">
+            <h3>Someone Famous<br/><span>Website Designer</span></h3>
+            <ul>
+                <li><img src="../image/profile.svg" alt=""><a href="#">My profile</a></li>
+                <li><img src="../image/edit.svg" alt=""><a href="#">Edit profile</a></li>
+                <li><img src="../image/inbox.svg" alt=""><a href="#">Inbox</a></li>
+                <li><img src="../image/setting.svg" alt=""><a href="#">Setting</a></li>
+                <li><img src="../image/help.svg" alt=""><a href="#">Help</a></li>
+                <li><img src="../image/logout.svg" alt=""><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
