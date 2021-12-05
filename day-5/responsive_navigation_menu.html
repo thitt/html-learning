@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menuToggle" onclick="ToggleMenu()"></div>
+    <div class="navigation">
+        <div class="navArea">
+            <ul>
+                <li>
+                    <a href="" onmouseenter="changeImage('image/img1.jpg')">Home</a>
+                </li>
+                <li>
+                    <a href="" onmouseenter="changeImage('image/img2.jpg')">About</a>
+                </li>
+                <li>
+                    <a href="" onmouseenter="changeImage('image/img3.jpg')">Services</a>
+                </li>
+                <li>
+                    <a href="" onmouseenter="changeImage('image/img4.jpg')">Portfolio</a>
+                </li>
+                <li>
+                    <a href="" onmouseenter="changeImage('image/img5.jpg')">Team</a>
+                </li>
+                <li>
+                    <a href="" onmouseenter="changeImage('image/img6.jpg')">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="imgArea">
+            <img src="image/img1.jpg" alt="" id="slider">
+        </div>
+    </div>
+    <script>
+        function changeImage(anything) {
+            document.getElementById('slider').src = anything;
+        }
+
+        function ToggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
