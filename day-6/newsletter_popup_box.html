@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Newsletter Popup Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#" class="btn" onclick="popupToggle()">Subscribe Us</a>
+    <div id="popup">
+        <div class="content">
+            <img src="image/email.png" alt="">
+            <h2>Join our Newsletter</h2>
+            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized</p>
+            <div class="inputBox">
+                <input type="email" placeholder="Enter Email">
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Sign Up" class="btn">
+            </div>
+        </div>
+        <a href="#" class="close" onclick="popupToggle()">
+            <img src="image/cancel.png" alt="">
+        </a>
+    </div>
+    <script>
+        function popupToggle() {
+            const popup = document.getElementById('popup');
+            console.log(1);
+            popup.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
