@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Automatic Show Popup After Page Load</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="popup">
+        <div class="contentBox">
+            <div class="close">
+
+            </div>
+            <div class="imgBx">
+                <img src="image/gift.png">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Spacial Offer</h3>
+                    <h2>80<sup>%</sup><span>Off</span></h2>
+                    <p>The standard Lorem Ipsum passage, used since the 1500s</p>
+                    <a href="">Get The Deal</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const popup = document.querySelector('.popup');
+        const close = document.querySelector('.close')
+
+        window.onload = function () {
+            setTimeout(function () {
+                popup.style.display = 'block';
+            }, 2000)
+        }
+        close.addEventListener('click', () => {
+            popup.style.display = 'none';
+        })
+    </script>
+</body>
+</html>
