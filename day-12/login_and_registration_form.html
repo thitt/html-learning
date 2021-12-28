@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login and Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="user singinBx">
+                <div class="imgBx"><img src="image/img1.jpeg"></div>
+                <div class="formBx">
+                    <form action="">
+                        <h2>Sign In</h2>
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <input type="submit" value="Login">
+                        <p class="signup">Don't have an account? <a href="#" onclick="toggleForm();">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user signupBx">
+                <div class="formBx">
+                    <form action="">
+                        <h2>Create an account</h2>
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email Address">
+                        <input type="password" placeholder="Create Password">
+                        <input type="password" placeholder="Confirm Password">
+                        <input type="submit" value="Sign Up">
+                        <p class="signup">Already have an account? <a href="#" onclick="toggleForm();">Sign in</a></p>
+                    </form>
+                </div>
+                <div class="imgBx"><img src="image/img2.jpeg"></div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function toggleForm() {
+            var container = document.querySelector('.container');
+            container.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
